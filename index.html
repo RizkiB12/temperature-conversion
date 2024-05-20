@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversion</title>
+    <!-- Update your Tailwind CSS link to the latest version -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto px-4">
+      <form class="bg-white p-8 rounded-lg shadow-md max-w-lg mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8">
+          Temperature Conversion
+        </h1>
+
+        <div class="mb-8">
+          <input
+            type="number"
+            id="textBox"
+            value="0"
+            placeholder="Enter temperature"
+            class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300"
+          />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <label class="inline-flex items-center">
+            <input
+              type="radio"
+              id="celciusToFahrenheit"
+              name="unit"
+              class="form-radio h-5 w-5 text-blue-600"
+            /><span class="ml-2 text-gray-700">Celcius to Fahrenheit</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input
+              type="radio"
+              id="fahrenheitToCelcius"
+              name="unit"
+              class="form-radio h-5 w-5 text-blue-600"
+            /><span class="ml-2 text-gray-700">Fahrenheit to Celcius</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input
+              type="radio"
+              id="celciusToReamur"
+              name="unit"
+              class="form-radio h-5 w-5 text-blue-600"
+            /><span class="ml-2 text-gray-700">Celcius to Reamur</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input
+              type="radio"
+              id="reamurToCelcius"
+              name="unit"
+              class="form-radio h-5 w-5 text-blue-600"
+            /><span class="ml-2 text-gray-700">Reamur to Celcius</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input
+              type="radio"
+              id="reamurToFahrenheit"
+              name="unit"
+              class="form-radio h-5 w-5 text-blue-600"
+            /><span class="ml-2 text-gray-700">Reamur to Fahrenheit</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input
+              type="radio"
+              id="fahrenheitToReamur"
+              name="unit"
+              class="form-radio h-5 w-5 text-blue-600"
+            /><span class="ml-2 text-gray-700">Fahrenheit to Reamur</span>
+          </label>
+        </div>
+
+        <button
+          type="button"
+          onclick="convert()"
+          class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-300"
+        >
+          Convert
+        </button>
+
+        <p
+          id="result"
+          class="mt-6 text-center text-gray-800 text-3xl text-bold"
+        ></p>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
