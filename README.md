@@ -19,7 +19,7 @@ A simple, responsive, and modern web application for converting temperatures bet
 
 ## Demo
 
-Check out the live demo [here](https://johndoe.github.io/temperature-converter).
+Check out the live demo [here](https://temperature-conversion-sigma.vercel.app/).
 
 ## Installation
 
@@ -37,11 +37,10 @@ Check out the live demo [here](https://johndoe.github.io/temperature-converter).
 
 1. Enter the temperature value in the input field with number that you want.
 2. Select the conversion unit from the radio buttons.
-3. Click the "Submit" button to see the converted temperature.
+3. Click the "Convert" button to see the converted temperature.
 4. The result of the conversion display at bottom of the button.
 
 ## Acknowledgements
 
+- [HTML](https://www.w3schools.com/html/) for the HTML resource.
 - [Tailwind CSS](https://tailwindcss.com) for the awesome CSS framework.
-- [OpenAI](https://openai.com) for the AI assistance.
-- [Shields.io](https://shields.io) for the badges.
